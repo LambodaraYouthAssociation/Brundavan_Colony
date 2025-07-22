@@ -1,0 +1,102 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8ec; /* Soft cream background */
+  color: #4a2c00; /* Deep brown text */
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #ffcc80; /* Light saffron (devotional color) */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+.header h1 {
+  margin: 10px 0 0;
+  font-size: 28px;
+  color: #6d3100;
+}
+
+/* Journey Section */
+.journey-section {
+  padding: 40px 20px;
+}
+
+.journey-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #b35900;
+}
+
+.journey-text {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #4a2c00;
+}
+
+/* Vertical Gallery - 1 Column, 7 Rows */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Tweaks (optional, for smaller screens) */
+@media (max-width: 480px) {
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .journey-section {
+    padding: 30px 10px;
+  }
+
+  .journey-section h2 {
+    font-size: 18px;
+  }
+
+  .journey-text {
+    font-size: 14px;
+  }
+
+  .gallery img {
+    max-width: 90%;
+  }
+}

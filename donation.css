@@ -1,0 +1,100 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8ec; /* Soft cream background */
+  color: #4a2c00; /* Deep brown text */
+  text-align: center;
+}
+
+/* Donation Container */
+.donation-container {
+  padding: 30px 20px;
+}
+
+/* Donation Section */
+.donation-text {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #4a2c00;
+}
+
+/* Form Styles */
+.form-area {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-area input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Payment Section */
+.payment-section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff1d6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.payment-section h3 {
+  margin-bottom: 15px;
+  color: #b35900;
+}
+
+.qr-code {
+  width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffcc80;
+}
+
+/* UPI Icons */
+.upi-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.upi-icons img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.upi-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .qr-code {
+    width: 150px;
+  }
+
+  .upi-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .donation-text {
+    font-size: 14px;
+  }
+
+  .form-area input {
+    font-size: 13px;
+  }
+}
